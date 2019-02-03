@@ -358,7 +358,7 @@ static void dotty (lua_State *L) {
         lua_pushfstring(L,
                         "error calling " LUA_QL("print") " (%s)",
                         lua_tostring(L, -1));
-        report(L,status);
+      report(L,status);
     }
   }
   lua_settop(L, 0);  /* clear stack */
